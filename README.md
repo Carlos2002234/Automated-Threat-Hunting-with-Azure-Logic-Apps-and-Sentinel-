@@ -12,8 +12,8 @@ This project helps to create analytic rules in Azure Security Center to monitor 
 Before you begin, ensure you have met the following requirements:
 
 - Azure subscription
-- Access to Azure Security Center
-- Appropriate permissions to create analytic rules
+- Azure VM to run Powershell Script
+- Appropriate permissions to create analytic rules and run PlayBooks
 
 ---
 
