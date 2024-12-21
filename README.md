@@ -33,3 +33,9 @@ This will generate a Base64-encoded string as output. For example:
 
  ```powershell
 JABnAGUAdAAtAHAAcgBvAGMAYwBlcwA=
+
+Use the following format to run the encoded command:
+
+ ```powershell
+1212
+
