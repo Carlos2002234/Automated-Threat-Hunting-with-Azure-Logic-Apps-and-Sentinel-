@@ -31,6 +31,7 @@ Suppose you want to run the `Get-Process` command. To encode it:
 
 This will generate a Base64-encoded string as output. For example:
 
+ ```powershell
 JABnAGUAdAAtAHAAcgBvAGMAYwBlcwA=
 
 
