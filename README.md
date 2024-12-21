@@ -18,12 +18,31 @@ First, create the PowerShell command you want to execute and encode it in base64
 #### Example:
 Suppose you want to run the `Get-Process` command. To encode it:
 
-1. Open PowerShell.
+1. Open PowerShell in the VM created
 2. Run the following script:
 
-```powershell
 $command = 'Get-Process'
 $bytes = [System.Text.Encoding]::Unicode.GetBytes($command)
 $encodedCommand = [Convert]::ToBase64String($bytes)
 $encodedCommand
+
+This will generate a base64-encoded string as output. For example:
+JABnAGUAdAAtAHAAcgBvAGMAYwBlcwA=
+
+Use the following format to run the encoded command:
+powershell.exe -EncodedCommand <your_encoded_command_base64>
+
+Example:
+powershell.exe -EncodedCommand JABnAGUAdAAtAHAAcgBvAGMAYwBlcwA=
+
+
+If the rule is set up correctly, an incident is going to be generated in Azure Sentinel
+
+
+
+
+
+
+
+
 
