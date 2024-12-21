@@ -27,26 +27,11 @@ Suppose you want to run the `Get-Process` command. To encode it:
    $bytes = [System.Text.Encoding]::Unicode.GetBytes($command)
    $encodedCommand = [Convert]::ToBase64String($bytes)
    $encodedCommand
+
+
 This will generate a Base64-encoded string as output. For example:
 
- ```powershell
 JABnAGUAdAAtAHAAcgBvAGMAYwBlcwA=
-2. Execute the Encoded Command
-Use the following format to run the encoded command:
-
-bash
-Copy code
-powershell.exe -EncodedCommand <your_encoded_command_base64>
-For example:
-
-bash
-Copy code
-powershell.exe -EncodedCommand JABnAGUAdAAtAHAAcgBvAGMAYwBlcwA=
-3. Verify Incident Generation
-If your detection rule is set up correctly in Azure Sentinel, an incident will be generated as soon as the command is executed.
-
-
-
 
 
 
