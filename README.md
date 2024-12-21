@@ -21,9 +21,11 @@ Before you begin, ensure you have met the following requirements:
 
 ### Step 1: Create a New Analytic Rule
 1. Navigate to **Azure Sentinel**.
-2. Go to Analytic rule
-3. Choose **Analytics** from the menu options.
-4. Click on **+ Add new** to create a new analytic rule.
+2. Choose **Analytics** from the menu options.
+3. Choose **Scheduled** query rule from the menu options.
+4. Configure the rule to generate incident
+![image](https://github.com/user-attachments/assets/dbff75cb-6d5e-43a8-94d5-3e811d0552ff)
+
 
 ### Step 2: Define Rule Settings
 1. Under **Rule name**, enter a descriptive name for the rule (e.g., "Suspicious Sign-In Detection").
