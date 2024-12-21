@@ -20,8 +20,8 @@ Before you begin, ensure you have met the following requirements:
 ## Steps to Set Up
 
 ### Step 1: Create a New Analytic Rule
-1. Navigate to **Azure Security Center**.
-2. In the left pane, select **Security alerts**.
+1. Navigate to **Azure Sentinel**.
+2. Go to Analytic rule**.
 3. Choose **Analytics** from the menu options.
 4. Click on **+ Add new** to create a new analytic rule.
 
