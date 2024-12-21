@@ -98,13 +98,15 @@ This guide explains how to generate an incident using a base64 encoded PowerShel
 
 ![image](https://github.com/user-attachments/assets/f4348a2e-969a-484a-a28d-cf22eb4cb277)
 
-### Step 7: Create a Logic App to Respond to an Incident
+### Step 7: Create a Automation rule 
 1. Navigate to **Azure Sentinel**.
 2. Choose **Automation** from the menu options.
 3. Choose **Create + Automation Rule** 
 4. Configure automation rule as shown in ss and create automation rule
+
 ![image](https://github.com/user-attachments/assets/6a5e3bd0-7fe2-48c7-bb43-d96587c128fe)
 
+### Step 8: Check email with incident Details
 
 
 
