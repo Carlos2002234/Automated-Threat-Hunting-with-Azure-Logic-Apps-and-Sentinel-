@@ -21,7 +21,7 @@ Before you begin, ensure you have met the following requirements:
 
 ### Step 1: Create a New Analytic Rule
 1. Navigate to **Azure Sentinel**.
-2. Go to Analytic rule**.
+2. Go to Analytic rule
 3. Choose **Analytics** from the menu options.
 4. Click on **+ Add new** to create a new analytic rule.
 
