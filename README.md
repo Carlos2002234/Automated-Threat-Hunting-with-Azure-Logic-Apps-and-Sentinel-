@@ -79,4 +79,5 @@ This guide explains how to generate an incident using a base64 encoded PowerShel
 
 ### Step 5: Check the generated Incident
 
-<img width="223" alt="image" src="https://github.com/user-attachments/assets/a2ed3f5b-8d40-46e9-9354-754bb139a566" />
+<img width="614" alt="image" src="https://github.com/user-attachments/assets/95dff0c8-3a65-4b58-a21e-b8ae207e5b74" />
+
