@@ -71,7 +71,7 @@ This guide explains how to generate an incident using a base64 encoded PowerShel
   $encodedCommand = [Convert]::ToBase64String($bytes)
   $encodedCommand
   
-2. Execute the Encoded Command
+Execute the Encoded Command
 Run the encoded command with the following:
 
 ```powershell
