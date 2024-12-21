@@ -6,9 +6,9 @@
 Create an automated threat hunting solution using Azure Sentinel and Azure Logic Apps to detect suspicious activities and take appropriate actions such as sending alerts or triggering a response.
 
 
-# PowerShell Encoded Command Incident Generation
+# PowerShell Encoded Command Incident Generation and Playbook 
 
-This repository demonstrates how to execute an encoded PowerShell command to trigger detection rules in monitoring systems like **Azure Sentinel**. This process helps you test configurations and ensure your detection rules are functioning as expected.
+This repository demonstrates how to execute an encoded PowerShell KQL query command to identify encoded commands. It triggers an incident based on analytic rules in Azure Sentinel and generates a playbook to send an email notification when the incident is detected.
 
 
 # PowerShell Encoded Command Incident Generation
