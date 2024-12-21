@@ -64,6 +64,7 @@ This guide explains how to generate an incident using a base64 encoded PowerShel
 ### 1. Prepare the Encoded Command
 - Example command: `Get-Process`
 - Encode it in base64 using the following PowerShell script:
+  
   ```powershell
   $command = 'Get-Process'
   $bytes = [System.Text.Encoding]::Unicode.GetBytes($command)
@@ -72,6 +73,7 @@ This guide explains how to generate an incident using a base64 encoded PowerShel
   
 2. Execute the Encoded Command
 Run the encoded command with the following:
+
 ```powershell
 powershell.exe -EncodedCommand <your_base64_encoded_command>
 powershell.exe -EncodedCommand JABnAGUAdAAtAHAAcgBvAGMAYwBlcwA=
