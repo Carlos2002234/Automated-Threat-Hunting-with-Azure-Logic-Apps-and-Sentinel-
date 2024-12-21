@@ -35,6 +35,7 @@ Before you begin, ensure you have met the following requirements:
 
 ### Step 3: Provide the Query
 1. In the **Query** section, paste the query provided:
+   
    ```kusto
    let EncodedList = dynamic(['-encodedcommand', '-enc']); 
    // For more results use line below en filter one above. This will also return more FPs.
