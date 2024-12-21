@@ -95,8 +95,6 @@ This guide explains how to generate an incident using a base64 encoded PowerShel
 
 ![image](https://github.com/user-attachments/assets/875e5fdd-b335-45ae-8a7b-f59081ae2ea3)
 
-![image](https://github.com/user-attachments/assets/f4348a2e-969a-484a-a28d-cf22eb4cb277)
-
 ### Step 7: Create a Automation rule 
 1. Navigate to **Azure Sentinel**.
 2. Choose **Automation** from the menu options.
