@@ -78,7 +78,7 @@ This guide explains how to generate an incident using a base64 encoded PowerShel
 
 ### Step 5: Check the generated Incident
 
-<img width="614" alt="image" src="https://github.com/user-attachments/assets/95dff0c8-3a65-4b58-a21e-b8ae207e5b74" />
+![image](https://github.com/user-attachments/assets/7bfb7e57-965a-4175-bf29-311f6247f95b)
 
 ### Step 6: Create a Logic App to Respond to an Incident
 
