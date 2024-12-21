@@ -105,6 +105,8 @@ This guide explains how to generate an incident using a base64 encoded PowerShel
 
 ### Step 8: Check email with incident Details
 
+![image](https://github.com/user-attachments/assets/faf6657e-5443-480c-a0ec-a383d056f299)
+
 
 
 
