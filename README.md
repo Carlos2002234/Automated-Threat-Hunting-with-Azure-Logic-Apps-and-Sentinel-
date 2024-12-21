@@ -74,6 +74,7 @@ This guide explains how to generate an incident using a base64 encoded PowerShel
 - Execute the Encoded Command
 - Run the encoded command with the following:
 
-```powershell
-powershell.exe -EncodedCommand <your_base64_encoded_command>
+   ```powershell
+   powershell.exe -EncodedCommand <your_base64_encoded_command>
 
+### Step 5: Check the generated Incident
