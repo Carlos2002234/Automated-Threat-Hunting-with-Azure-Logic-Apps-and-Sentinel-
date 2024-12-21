@@ -33,9 +33,3 @@ This will generate a Base64-encoded string as output. For example:
 
  ```powershell
 JABnAGUAdAAtAHAAcgBvAGMAYwBlcwA=
-
-
-
-
-
-
