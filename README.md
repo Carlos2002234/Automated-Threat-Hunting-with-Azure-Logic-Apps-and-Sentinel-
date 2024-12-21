@@ -11,26 +11,6 @@ Create an automated threat hunting solution using Azure Sentinel and Azure Logic
 This repository demonstrates how to execute an encoded PowerShell KQL query command to identify encoded commands. It triggers an incident based on analytic rules in Azure Sentinel and generates a playbook to send an email notification when the incident is detected.
 
 
-# PowerShell Encoded Command Incident Generation
-
-This repository demonstrates how to execute an encoded PowerShell command to trigger detection rules in monitoring systems like **Azure Sentinel**. This process helps you test configurations and ensure your detection rules are functioning as expected.
-
-## Steps to Execute an Encoded PowerShell Command and Generate an Incident
-
-### 1. Prepare the Encoded Command
-
-First, create the PowerShell command you want to execute and encode it in **Base64**.
-
-#### Example:
-Suppose you want to run the `Get-Process` command. To encode it:
-
-1. Open PowerShell in the VM you created.
-2. Run the following script:
-
-   ```powershell
-   $command = 'Get-Process'
-   $bytes = [System.Text.Encoding]::Unicode.GetBytes($command)
-   $encodedCommand = [Convert]::ToBase64String($bytes)
-   $encodedCommand
-
+1. Create an analytic rule using the provided query to generate an incident
+   ![image](https://github.com/user-attachments/assets/13c9bb4f-920a-4202-8416-970eaea08d29)
 
