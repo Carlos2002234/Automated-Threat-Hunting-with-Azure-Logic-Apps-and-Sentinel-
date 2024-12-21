@@ -76,8 +76,4 @@ Run the encoded command with the following:
 
 ```powershell
 powershell.exe -EncodedCommand <your_base64_encoded_command>
-powershell.exe -EncodedCommand JABnAGUAdAAtAHAAcgBvAGMAYwBlcwA=
-
-
-
 
