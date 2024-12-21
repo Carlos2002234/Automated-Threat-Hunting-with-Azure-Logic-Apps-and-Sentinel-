@@ -10,6 +10,11 @@ Create an automated threat hunting solution using Azure Sentinel and Azure Logic
 
 This repository demonstrates how to execute an encoded PowerShell command to trigger detection rules in monitoring systems like **Azure Sentinel**. This process helps you test configurations and ensure your detection rules are functioning as expected.
 
+
+# PowerShell Encoded Command Incident Generation
+
+This repository demonstrates how to execute an encoded PowerShell command to trigger detection rules in monitoring systems like **Azure Sentinel**. This process helps you test configurations and ensure your detection rules are functioning as expected.
+
 ## Steps to Execute an Encoded PowerShell Command and Generate an Incident
 
 ### 1. Prepare the Encoded Command
@@ -28,14 +33,4 @@ Suppose you want to run the `Get-Process` command. To encode it:
    $encodedCommand = [Convert]::ToBase64String($bytes)
    $encodedCommand
 
-
-This will generate a Base64-encoded string as output. For example:
-
- ```powershell
-JABnAGUAdAAtAHAAcgBvAGMAYwBlcwA=
-
-Use the following format to run the encoded command:
-
- ```powershell
-1212
 
