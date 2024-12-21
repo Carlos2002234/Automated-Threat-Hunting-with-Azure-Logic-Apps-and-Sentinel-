@@ -8,35 +8,43 @@ Create an automated threat hunting solution using Azure Sentinel and Azure Logic
 
 # PowerShell Encoded Command Incident Generation
 
-This repository demonstrates how to execute an encoded PowerShell command to trigger detection rules in monitoring systems like **Azure Sentinel**. This process helps you test configurations and ensure your detection rules are working as expected.
+This repository demonstrates how to execute an encoded PowerShell command to trigger detection rules in monitoring systems like **Azure Sentinel**. This process helps you test configurations and ensure your detection rules are functioning as expected.
 
 ## Steps to Execute an Encoded PowerShell Command and Generate an Incident
 
 ### 1. Prepare the Encoded Command
-First, create the PowerShell command you want to execute and encode it in base64.
+
+First, create the PowerShell command you want to execute and encode it in **Base64**.
 
 #### Example:
 Suppose you want to run the `Get-Process` command. To encode it:
 
-1. Open PowerShell in the VM created
+1. Open PowerShell in the VM you created.
 2. Run the following script:
 
-$command = 'Get-Process'
-$bytes = [System.Text.Encoding]::Unicode.GetBytes($command)
-$encodedCommand = [Convert]::ToBase64String($bytes)
-$encodedCommand
+   ```powershell
+   $command = 'Get-Process'
+   $bytes = [System.Text.Encoding]::Unicode.GetBytes($command)
+   $encodedCommand = [Convert]::ToBase64String($bytes)
+   $encodedCommand
+This will generate a Base64-encoded string as output. For example:
 
-This will generate a base64-encoded string as output. For example:
+makefile
+Copy code
 JABnAGUAdAAtAHAAcgBvAGMAYwBlcwA=
-
+2. Execute the Encoded Command
 Use the following format to run the encoded command:
+
+bash
+Copy code
 powershell.exe -EncodedCommand <your_encoded_command_base64>
+For example:
 
-Example:
+bash
+Copy code
 powershell.exe -EncodedCommand JABnAGUAdAAtAHAAcgBvAGMAYwBlcwA=
-
-
-If the rule is set up correctly, an incident is going to be generated in Azure Sentinel
+3. Verify Incident Generation
+If your detection rule is set up correctly in Azure Sentinel, an incident will be generated as soon as the command is executed.
 
 
 
