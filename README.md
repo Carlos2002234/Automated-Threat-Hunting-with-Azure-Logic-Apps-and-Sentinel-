@@ -54,10 +54,10 @@ Before you begin, ensure you have met the following requirements:
    | project DeviceName, TotalUniqueEncodedCommandsExecuted, UniqueExecutionsList
    | sort by TotalUniqueEncodedCommandsExecuted
 
-### Step 5: RDP into the VM 
+### Step 5: Establish a remote connection to the Windows VM using RDP
 # Generate an Incident Using a Base64 Encoded PowerShell Command
 
-This guide explains how to generate an incident using a base64 encoded PowerShell command, which will trigger a detection rule in your monitoring system (e.g., Azure Sentinel).
+This guide explains how to generate an incident using a base64 encoded PowerShell command, which will trigger a analytic rule in your monitoring system (e.g., Azure Sentinel).
 
 ## Steps:
 
@@ -69,5 +69,11 @@ This guide explains how to generate an incident using a base64 encoded PowerShel
   $bytes = [System.Text.Encoding]::Unicode.GetBytes($command)
   $encodedCommand = [Convert]::ToBase64String($bytes)
   $encodedCommand
+  
+2. Execute the Encoded Command
+Run the encoded command with the following:
+```powershell
+powershell.exe -EncodedCommand <your_base64_encoded_command>
+
 
 
