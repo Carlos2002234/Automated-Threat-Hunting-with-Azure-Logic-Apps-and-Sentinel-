@@ -24,13 +24,14 @@ Before you begin, ensure you have met the following requirements:
 2. Choose **Analytics** from the menu options.
 3. Choose **Scheduled** query rule from the menu options.
 4. Configure the rule to generate incident
+   
 ![image](https://github.com/user-attachments/assets/dbff75cb-6d5e-43a8-94d5-3e811d0552ff)
 
 
 ### Step 2: Define Rule Settings
-1. Under **Rule name**, enter a descriptive name for the rule (e.g., "Suspicious Sign-In Detection").
-2. Choose the **Rule type** (e.g., Custom).
-3. Set the **Severity** level based on your organization’s needs.
+1. Under **Rule name**, enter a descriptive name for the rule (e.g., "Power Shell Encoded Commands Executed").
+2. Set the rule Logic and paste KQL query provided
+3. Set the **Query scheduling** to run every 10 minutes and Lookup data from the last 5 hours
 
 ### Step 3: Provide the Query
 1. In the **Query** section, paste the query provided:
