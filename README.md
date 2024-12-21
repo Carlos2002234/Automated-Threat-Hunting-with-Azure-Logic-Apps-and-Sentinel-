@@ -1,10 +1,10 @@
-# Project Name
+# Project Name : PowerShell Command Encoding Detection and Analysis in Azure Sentinel
 
 ## Overview
-Briefly describe what the project is about and its purpose. 
+This project uses Azure Sentinel to detect encoded PowerShell commands on devices. The query identifies events with encoded PowerShell flags, extracts and decodes base64 strings, and summarizes unique decoded commands. The results trigger incidents, activating a playbook that sends an email with detailed information for further investigation
 
 Example:
-This project helps to create analytic rules in Azure Security Center to monitor specific activities and generate incidents based on certain queries.
+This project helps to create analytic rules in Azure Sentinel to monitor specific activities and generate incidents based on certain queries.
 
 ---
 
@@ -80,4 +80,36 @@ This guide explains how to generate an incident using a base64 encoded PowerShel
 ### Step 5: Check the generated Incident
 
 <img width="614" alt="image" src="https://github.com/user-attachments/assets/95dff0c8-3a65-4b58-a21e-b8ae207e5b74" />
+
+### Step 6: Create a Logic App to Respond to an Incident
+
+1. Navigate to **Logic Apps** in the Azure portal.
+2. Click on **+ Add** from the menu to create a new Logic App.
+3. Select the **Consumption Plan** option.
+4. Configure the Logic App settings (e.g., name, resource group) and click **Create**.
+5. Once the Logic App is created, open the **Logic App Designer**.
+6. In the Designer, click **+ New step**, then search for and select **Microsoft Sentinel**. Choose the trigger: **When an incident is created**.
+7. Add a new step for **Outlook** to send an email. Select **Send an email (V2)**.
+8. Configure the email parameters (e.g., recipient, subject, body) and authenticate with your email account.
+9. In the email body, use dynamic content (such as **Description**, **URL**, **Title**) to personalize the message.
+10. Test the Logic App workflow locally to ensure it runs correctly and check for any errors.
+
+![image](https://github.com/user-attachments/assets/875e5fdd-b335-45ae-8a7b-f59081ae2ea3)
+
+![image](https://github.com/user-attachments/assets/f4348a2e-969a-484a-a28d-cf22eb4cb277)
+
+### Step 7: Create a Logic App to Respond to an Incident
+1. Navigate to **Azure Sentinel**.
+2. Choose **Automation** from the menu options.
+3. Choose **Create + Automation Rule** 
+4. Configure automation rule as shown in ss and create automation rule
+![image](https://github.com/user-attachments/assets/6a5e3bd0-7fe2-48c7-bb43-d96587c128fe)
+
+
+
+
+
+
+
+
 
