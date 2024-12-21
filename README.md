@@ -29,8 +29,7 @@ Suppose you want to run the `Get-Process` command. To encode it:
    $encodedCommand
 This will generate a Base64-encoded string as output. For example:
 
-makefile
-Copy code
+ ```powershell
 JABnAGUAdAAtAHAAcgBvAGMAYwBlcwA=
 2. Execute the Encoded Command
 Use the following format to run the encoded command:
