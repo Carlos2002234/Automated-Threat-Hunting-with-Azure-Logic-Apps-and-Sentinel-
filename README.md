@@ -1,16 +1,38 @@
-# Automated-Threat-Hunting-with-Azure-Logic-Apps-and-Sentinel-
+# Project Name
 
-![image](https://github.com/user-attachments/assets/9353ecd1-5646-44a0-a036-acc854aeca23)
+## Overview
+Briefly describe what the project is about and its purpose. 
 
+Example:
+This project helps to create analytic rules in Azure Security Center to monitor specific activities and generate incidents based on certain queries.
 
-Create an automated threat hunting solution using Azure Sentinel and Azure Logic Apps to detect suspicious activities and take appropriate actions such as sending alerts or triggering a response.
+---
 
+## Prerequisites
+Before you begin, ensure you have met the following requirements:
 
-# PowerShell Encoded Command Incident Generation and Playbook 
+- Azure subscription
+- Access to Azure Security Center
+- Appropriate permissions to create analytic rules
 
-This repository demonstrates how to execute an encoded PowerShell KQL query command to identify encoded commands. It triggers an incident based on analytic rules in Azure Sentinel and generates a playbook to send an email notification when the incident is detected.
+---
 
+## Steps to Set Up
 
-1. Create an analytic rule using the provided query to generate an incident
-   ![image](https://github.com/user-attachments/assets/13c9bb4f-920a-4202-8416-970eaea08d29)
+### Step 1: Create a New Analytic Rule
+1. Navigate to **Azure Security Center**.
+2. In the left pane, select **Security alerts**.
+3. Choose **Analytics** from the menu options.
+4. Click on **+ Add new** to create a new analytic rule.
 
+### Step 2: Define Rule Settings
+1. Under **Rule name**, enter a descriptive name for the rule (e.g., "Suspicious Sign-In Detection").
+2. Choose the **Rule type** (e.g., Custom).
+3. Set the **Severity** level based on your organization’s needs.
+
+### Step 3: Provide the Query
+1. In the **Query** section, paste the query provided:
+   ```kusto
+   SecurityEvent
+   | where EventID == 4625
+   | where AccountType == "User"
